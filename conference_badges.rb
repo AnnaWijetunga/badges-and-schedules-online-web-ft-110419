@@ -8,7 +8,7 @@ def batch_badge_creator(speakers_lineup)
 end
 
 def assign_rooms(speakers_lineup)
- speakers_lineup.each_with_index.collect {|speaker, index| "Hello, #{speaker}! You'll be assigned to room #{index+1}!"}
+ speakers_lineup.each_with_index.map {|speaker, index| "Hello, #{speaker}! You'll be assigned to room #{index+1}!"}
 end
 
 def printer(speakers)
